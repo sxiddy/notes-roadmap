@@ -78,3 +78,12 @@ Port each block into the reference shell (baeee101-notes) on a branch so `new-su
    traces and outputs instead. Confirm, or ask for the Python-only Pyodide option.
 2. Source material: approve downloads from VTOP, one faculty set per course; name a source for Spanish.
 3. Lab solutions: full solutions behind Pro, or hints plus viva only (academic-integrity risk to the brand).
+
+## Owner decisions (11-11-2026)
+1. Runnable code: NO in-browser execution for C/C++. Ship verified traces and outputs (compiled offline at build time).
+   Revisit only for a Python course.
+2. VTOP source files: APPROVED to download ONE faculty's set per course (not all 100-190 uploads), via the owner's Chrome,
+   one course at a time. Spanish (BAESP101) has no VTOP material: owner must name a source before it can start.
+3. Lab (ELA) pages: hints and viva questions only. No full lab solutions (academic-integrity risk to the brand).
+Next step: finish `VTOP-INVENTORY.md` (5 ELA options unopened, 4 courses counted only), then build prototype P1.
+Do this after the weekly limit resets (15-11-2026, 19:00 UTC); check usage before every step.
