@@ -15,6 +15,9 @@ Three strings describe an older version of the sites and mislead students or sea
 - Default prices in code differ and are all stale: `PRICE_PAISE` fallback in `api/_lib.js:4` is 2000 (evs), 5000
   (bachy105), 1000 (baeee101, baeng101). The store price replaces them when the store answers.
 
+- `evs-notes/app/js/notix-extras.js:7`: `FREE_TOOL = 'beer-lambert'`, a chemistry tool id copied with the shell.
+  Check whether EVS has a tool with that id; if not, set it to an EVS model id (see `viz-paid/`) or remove the label.
+
 ## Fix
 1. Rewrite the two meta descriptions without module numbers.
 2. battle.js: "Free accounts get one preview battle on a single topic."

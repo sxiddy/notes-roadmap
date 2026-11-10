@@ -45,5 +45,9 @@ GitHub: private repos under the `sxiddy` account (baeng101 is under a second acc
 - Notes site: `node tools/validate.js --all` (0 errors), `node tools/build.js`, `node tools/qa.js`, then `git status`.
 - Store: `npm test` (node test runner, `tests/*.test.js`, uses `tools/fakeredis.js` style fakes), `npm run build`.
 
+## Which model does what
+See `MODELS-AND-BUILD-METHODS.md`: the model and tool roster, how every feature is built, and who builds what
+at each pipeline stage. Free models only check; they never write text students read.
+
 ## Resume
 Open this repo, read this file, open `README.md`, pick the first TODO in the recommended order, read that one file.
