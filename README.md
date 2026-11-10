@@ -55,6 +55,18 @@ Money = touches payments, referrals, admin or access (owner approval required). 
 | C9 | Semester pass | High later | 12% | High | yes | TODO |
 | L1 | later/razorpay-auto-payout.md | Low now | n/a | High | yes | LATER |
 
+## New-subject planning files (added 11-11-2026)
+| File | What |
+|---|---|
+| [new-subjects/VTOP-INVENTORY.md](new-subjects/VTOP-INVENTORY.md) | What VTOP lists for the Winter 2026-27 courses (PARTIAL) |
+| [new-subjects/SUBJECT-TYPES.md](new-subjects/SUBJECT-TYPES.md) | Subject types, shared building blocks B1-B6, ETH/ELA split, prototypes, owner decisions |
+| [new-subjects/types/programming.md](new-subjects/types/programming.md) | Playbook: BACSE104, BACSE105 |
+| [new-subjects/types/systems-hardware.md](new-subjects/types/systems-hardware.md) | Playbook: BACSE103, BACSE106 |
+| [new-subjects/types/mathematics.md](new-subjects/types/mathematics.md) | Playbook: BAMAT205 |
+| [new-subjects/types/language.md](new-subjects/types/language.md) | Playbook: BAESP101 (blocked on source) |
+| [new-subjects/types/physics-lab.md](new-subjects/types/physics-lab.md) | Playbook: BAPHY105 |
+| [new-subjects/SUBJECTS.md](new-subjects/SUBJECTS.md) | Subject list; rows 1-7 are these courses, status planned |
+
 ## Recommended order
 1. S01, S02, S03 (money at risk), then S11 (trivial).
 2. R1 English content, then S09.

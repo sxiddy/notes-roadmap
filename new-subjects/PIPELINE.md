@@ -6,6 +6,14 @@ Baseline (measured): a subject built the old way costs about 1.3-1.7M tokens; EV
 about 7% of a 5-hour limit; figures 0.25% each with generators. Targets below are ESTIMATES until logged in
 `SUBJECTS.md`.
 
+## Subject types (read before Stage 0 for any non-theory subject)
+This pipeline was written for theory-and-numerical subjects. For programming, systems, mathematics, language and
+physics-with-lab subjects read [SUBJECT-TYPES.md](SUBJECT-TYPES.md) and the matching playbook in
+[types/](types/): [programming](types/programming.md), [systems-hardware](types/systems-hardware.md),
+[mathematics](types/mathematics.md), [language](types/language.md), [physics-lab](types/physics-lab.md).
+Source material for the Winter 2026-27 courses: [VTOP-INVENTORY.md](VTOP-INVENTORY.md). Subject list:
+[SUBJECTS.md](SUBJECTS.md).
+
 ## Tiers
 | | Lite (every subject) | Full (only after about 30 sales or strong demand) |
 |---|---|---|
