@@ -58,6 +58,7 @@ Money = touches payments, referrals, admin or access (owner approval required). 
 ## New-subject planning files (added 11-11-2026)
 | File | What |
 |---|---|
+| [content-review/SYLLABUS-ALIGNMENT.md](content-review/SYLLABUS-ALIGNMENT.md) | Align every site with the VTOP syllabus tab (plan, 16-11-2026) |
 | [new-subjects/VTOP-INVENTORY.md](new-subjects/VTOP-INVENTORY.md) | What VTOP lists for the Winter 2026-27 courses (PARTIAL) |
 | [new-subjects/SUBJECT-TYPES.md](new-subjects/SUBJECT-TYPES.md) | Subject types, shared building blocks B1-B6, ETH/ELA split, prototypes, owner decisions |
 | [new-subjects/types/programming.md](new-subjects/types/programming.md) | Playbook: BACSE104, BACSE105 |
