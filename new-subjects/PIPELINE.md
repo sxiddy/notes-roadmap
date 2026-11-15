@@ -48,6 +48,12 @@ store list price (20); `"open": false` (S01).
    outline per topic. Rewrite only what fails this (missing facts or bare keyword lists); leave good tabs alone.
    Tools from evs-notes: `tools/coverage.js` (source sentences missing from notes) and `tools/terse.js`
    (keyword-only tabs).
+6. **Free models for light work** (owner, 16-11-2026). Use FreeLLMAPI (`Projects/external-repos/freellmapi`,
+   start with preview_start "freellmapi") wherever the job is small and checkable: mapping past-paper questions to
+   tabs, MCQ answer checks, flashcards from `<b>` terms, text clean-up, finding source quotes. Every output goes
+   through a script check (quotes verbatim in the source, JSON parses, answers present in the notes). They never
+   write what students read. In Nov 2026 most single-model routes returned 429; the router's `fusion` model
+   worked at 1 request every ~10 s (evs-notes `tools/freellm.py`, `tools/mcq-check.py`).
 5. **Interactive models only for hard topics**: processes, mechanisms, look-alike concepts, numbers that change
    with an input. Never decorative. Every label and number from the source. Check each with `tools/viz-snap.js`.
 

@@ -15,7 +15,11 @@ skipped: not examined.
 - Past papers: papers.codechefvit.com lists 14 BACHY105 papers on 2 pages (CAT-1, CAT-2, FAT; Fall 2025-26,
   Winter 2025-26, Fall 2026-27; slots B1, B2, D1, D2, F1, G1, G2). The examcooker.acmvit.in list loads by script:
   read it next session. VTOP adds CAT 1 QPs for Fall 2025-26 and Winter 2025-26.
-- Next session starts at step 1 (after the owner allows multiple downloads).
+- 16-11-2026 later: owner allowed automatic downloads. 68 clicks done; 59 unique files now in
+  `bachy105-notes/src/vtop/` (111 MB, gitignored), plus 2 still downloading in ~/Downloads ("Unconfirmed *.crdownload").
+  CHECK FIRST next session: move the finished ones in, then confirm these 4 arrived (re-download from VTOP if not):
+  F6 decks Module 1 and Module 4 (09-10-2026), "CAT 1 QP FALL 2025-26", "CAT 1 QP Winter 2025-26".
+- Next session starts at step 1b: extract text (pptx + pdf) from src/vtop, then step 2.
 - The site's original source decks (src/) were deleted after building, so the audit uses the fresh download.
 
 ## Steps
