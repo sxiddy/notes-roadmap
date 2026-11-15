@@ -32,6 +32,25 @@ identity (3); create `viz-paid/.gitkeep` (4); delete generated `api/_access.json
 subject's TOPIC words (5); add the `Projects/.claude/launch.json` entry (7); set `PRICE_PAISE` fallback to the
 store list price (20); `"open": false` (S01).
 
+## Content standard (owner, 16-11-2026: applies to every notes site, new and existing)
+1. **Sources from VTOP.** The owner signs in to VTOP in their Chrome (Claude never types the password or captcha).
+   Course Page lists 300+ uploads across semesters: read every page, not just the first 100. Download one complete,
+   current faculty deck set for all modules, plus every question bank, model paper, CAT/FAT paper, sample-question
+   and numericals file. Chrome must be allowed to download multiple files from vtop.vit.ac.in (owner clicks once).
+   Delete the downloads once the site is finished.
+2. **Syllabus = VTOP "Course Syllabus Modules" tab.** Every topic listed there must have notes. A "Contemporary
+   Topics" module is not examined: skip it.
+3. **Past papers must be answerable.** Collect CAT and FAT papers from papers.codechefvit.com
+   (`/catalogue?subject=<Subject+[CODE]>`) and examcooker.acmvit.in (`/past_papers/<CODE>`), plus the VTOP CAT QPs.
+   Make a question → topic/tab map; every question must be answerable from the notes. Any gap is a content fix.
+4. **Exam-complete, not keyword-short.** A student must be able to write a full answer from the notes: full-sentence
+   definitions, each list item explained (what, how/why, the source's example), table cells as clauses, an exam
+   outline per topic. Rewrite only what fails this (missing facts or bare keyword lists); leave good tabs alone.
+   Tools from evs-notes: `tools/coverage.js` (source sentences missing from notes) and `tools/terse.js`
+   (keyword-only tabs).
+5. **Interactive models only for hard topics**: processes, mechanisms, look-alike concepts, numbers that change
+   with an input. Never decorative. Every label and number from the source. Check each with `tools/viz-snap.js`.
+
 ## Stage 1 Extract (script, 0 tokens)
 `python tools/build.py` style pypdf dump to `src/text/<module>/<lecture>.txt` with `PYTHONIOENCODING=utf-8` (13);
 page renders to `src/pages/`; contact sheets; then `tools/clean-text.py` (T2) to `src/clean/`.
@@ -55,7 +74,8 @@ Only items flagged by Stage 4 and thin-tab warnings. Then `node tools/build.js`,
 `qa.js --free` once per module (33).
 
 ## Quality gates (all must pass before launch)
-validate 0 errors · coverage 100% of numbers and named terms · MCQ key agreed by two checkers or reviewed by hand ·
+validate 0 errors · coverage 100% of numbers and named terms · every VTOP syllabus topic has notes · every past
+CAT/FAT question maps to a tab that answers it · `terse.js` flags only complete data tables · MCQ key agreed by two checkers or reviewed by hand ·
 answer letters spread 20-30% each · every figure looked at once on a phone-width sheet · `qa.js` no runtime errors ·
 anonymous request for a Pro file returns 401.
 
