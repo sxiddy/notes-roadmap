@@ -12,6 +12,10 @@ skipped: not examined.
 - Deck set chosen: one faculty's complete Fall 2026-27 set (Modules 1–4 of 09-10-2026, Module 5 PPT of
   22-10-2026).
 - Downloads: blocked after the first file until the owner allows multiple downloads from vtop.vit.ac.in in Chrome.
+- Past papers: papers.codechefvit.com lists 14 BACHY105 papers on 2 pages (CAT-1, CAT-2, FAT; Fall 2025-26,
+  Winter 2025-26, Fall 2026-27; slots B1, B2, D1, D2, F1, G1, G2). The examcooker.acmvit.in list loads by script:
+  read it next session. VTOP adds CAT 1 QPs for Fall 2025-26 and Winter 2025-26.
+- Next session starts at step 1 (after the owner allows multiple downloads).
 - The site's original source decks (src/) were deleted after building, so the audit uses the fresh download.
 
 ## Steps
