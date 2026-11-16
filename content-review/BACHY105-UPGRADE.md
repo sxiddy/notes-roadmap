@@ -38,3 +38,12 @@ skipped: not examined.
 4. Fix only gaps and keyword-only tabs (one agent at a time, never Haiku). Add models only for hard topics that
    lack one (the site already has 19).
 5. validate, build, qa; commit; push only when the owner says "push". Delete the VTOP downloads when done.
+
+## 16-11-2026 evening: pushed (owner said "push everything")
+- Commit on main pushed: VTOP-row grouping + the fix agent's partial work (chunks B–G, J–N changed; new topic
+  m1-kinetics-numericals, spot-checked: 22.9 h, 84.1 %, Ea 36.3 kJ correct). validate: only the 124 old
+  "figure src not found" errors (slide images deleted after the first build; built figures are fine); qa: no runtime
+  errors; syllabus-check OK.
+- NOT done (agent hit the 5-hour limit): GAPS items 5 and 6 (chunks H/I: Carnot theorem, perpetual motion,
+  adsorption ΔS<0, absolute entropy) and maybe item 7 (Li-ion "intercalation"); re-run the coverage/past-paper
+  check for every item in src/GAPS.md before calling it complete. New facts have no MCQs/flashcards yet.
