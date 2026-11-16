@@ -63,3 +63,9 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
 - NOT done: owner asked to add Engineering Physics to the Notix store marked "under progress" and DSA and every
   other next-sem subject marked "coming soon" (vit-notes-store: src/data/subjects.mjs, legal.json; see commit 54ad479
   for how EVS was added). Not purchasable until Pro exists (lesson 23). Stopped at 93% of the 5-hour window.
+
+## Owner decision 16-11-2026 (do this first after the reset)
+- Store listing NOW, but with no sign of buying: no price, no buy/unlock button, no cart. Only a status badge plus the usual
+  subject card text. Engineering Physics (BAPHY105) = "In progress"; BACSE103/104/105/106, BAESP101, BAMAT205 = "Coming soon".
+- baphy105.vercel.app: do NOT release the notes yet. Suggested instead of an empty page: the same coming-soon page with an
+  "In progress" badge plus the module list and its progress (Module 1 written, 2–5 coming), notes not served.
