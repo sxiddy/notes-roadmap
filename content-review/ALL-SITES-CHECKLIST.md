@@ -28,7 +28,7 @@ class numbers into any file.
 ### BAEEE101 Basic Engineering (`baeee101-notes`) — agent running 16-11-2026
 Papers (40 in src/papers-cc), gaps, real diagrams (fix existing word-only diagrams), references, rows. Not pushed.
 
-### BACHY105 Applied Chemistry (`bachy105-notes`) — DONE 16-11-2026, committed d6576e3, NOT pushed (waiting for "push")
+### BACHY105 Applied Chemistry (`bachy105-notes`) — DONE 16-11-2026, d6576e3 pushed
 - All 22 GAPS items present (5–6 added: Carnot theorem tab, adsorption ΔS < 0, absolute entropy; 7 verified).
 - Condition 3: 14 papers (incl. new FAT B1+TB1 Nov 2026 with model answers), 91 questions, all covered:
   `content-review/bachy105-paper-map.md` (copy of `src/PAPER-MAP.md`, which is gitignored). ExamCooker's 8 papers all present.
