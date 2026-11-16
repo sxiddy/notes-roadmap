@@ -19,7 +19,16 @@ skipped: not examined.
   `bachy105-notes/src/vtop/` (111 MB, gitignored), plus 2 still downloading in ~/Downloads ("Unconfirmed *.crdownload").
   CHECK FIRST next session: move the finished ones in, then confirm these 4 arrived (re-download from VTOP if not):
   F6 decks Module 1 and Module 4 (09-10-2026), "CAT 1 QP FALL 2025-26", "CAT 1 QP Winter 2025-26".
-- Next session starts at step 1b: extract text (pptx + pdf) from src/vtop, then step 2.
+- 16-11-2026 session 2: the 4 "missing" files never arrived (the 2 .crdownload files were old unrelated .exe
+  downloads), but not needed: src/vtop has a complete M1–M5 deck set (Winter 2025-26, 17-03-2026) plus Fall
+  2026-27 decks. Text extracted to src/vtop-text/ (59 files). Deck coverage (tools/coverage.py, 60% word match):
+  M1 95–98%, M2 98%, M3 89–100%, M4 97–98%, M5 82–97% (the Oct-2026 Module-5 notes PDF adds Hückel, integrals,
+  Morse, HCN/HNC + ZPE, AI details).
+- Past papers: all 14 CodeChef papers downloaded to src/papers/ (6 are scans, read by eye). ExamCooker not read
+  (CodeChef already has CAT-1/CAT-2/FAT across 3 semesters). Map: bachy105-map.md.
+- 22 gaps found (bachy105-notes/src/GAPS.md); one writer agent is fixing them. Biggest: no kinetics numericals
+  topic (every CAT-1 has one).
+- Site regrouped by VTOP syllabus rows (SYLLABUS-ALIGNMENT.md). Home blurb fixed ("Modules 2, 3 and 4" was stale).
 - The site's original source decks (src/) were deleted after building, so the audit uses the fresh download.
 
 ## Steps

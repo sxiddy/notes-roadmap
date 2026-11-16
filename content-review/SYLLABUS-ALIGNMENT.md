@@ -19,10 +19,15 @@ module → VTOP syllabus rows (in VTOP's order and wording) → our topics. "Con
 ## Per site
 | Site | Repo | VTOP course | Status |
 |---|---|---|---|
-| Applied Chemistry | bachy105-notes | BACHY105 ETH (Fall 2026-27) | Syllabus read (below). Site modules match by name, but the site's m1..m5 chunk order differs; regroup topics under the rows. Module 6 skipped. |
-| Basic Engineering | baeee101-notes | BAEEE101 ETH (Fall 2026-27) | Syllabus not read yet. |
-| Technical English | baeng101-notes | BAENG101 ETH (Fall 2026-27) | Syllabus not read yet (SPEC says modules follow src/syllabus.pdf: compare with VTOP). |
-| EVS | evs-notes | BACHY101: not in the owner's VTOP course list | Source is the MOOVITOL course; already grouped by its 31 lectures inside Weeks 1–5 (Week 6 out of exam). Check whether a VTOP/official syllabus page exists; if not, the lecture grouping stays. |
+| Applied Chemistry | bachy105-notes | BACHY105 ETH (Fall 2026-27) | DONE 16-11-2026 (not pushed): `syllabusRows` in modules.json (34 rows, some VTOP rows merged where one topic teaches both, e.g. "4–6"), sidebar and module pages grouped by row (`.sb-row`, `.row-head`), `tools/syllabus-check.js` passes. |
+| Basic Engineering | baeee101-notes | BAEEE101 ETH (Fall 2026-27) | Syllabus read from `src/syllabus.pdf` (official). GAPS, no notes yet: **all of Module 5 Bio-Inspired Design** (biomimicry principles; Velcro/burrs, self-healing materials/skin, termite-mound ventilation, insect drones and soft robotics, neural networks/brain; bio-inspired problem solving); M4 refrigeration and air conditioning (deck on VTOP: Lecture18, 17-10-2026), four-bar mechanism and inversions, hexapod mechanisms, mechanical components and motion control, robotics and automation, pneumatic and hydraulic actuators, fuel cells and sustainable energy (only partly); M3 residential floor plan (IS SP 7), isometric/perspective (check depth), freehand sketching (check depth). Needs VTOP decks for M4B/M5 + past papers (CodeChef, ExamCooker). |
+| Technical English | baeng101-notes | BAENG101 ETH (Fall 2026-27) | Syllabus read from `src/syllabus.pdf`: every item already has notes. Only the row grouping is left (port the bachy105 app/build change + syllabusRows). |
+| EVS | evs-notes | BACHY101: not in the owner's VTOP course list | Exam is MCQ-only (owner, 16-11-2026): priority is the MCQ bank (every added fact has questions, keys checked), not written outlines. Grouped by its 31 lectures inside Weeks 1–5 (Week 6 out of exam). |
+
+How to port the grouping to another site (about 10 minutes): copy from bachy105-notes the `ROW`/`rowHead` block in
+`app/js/app.js` (just before the Free/Pro block) and the two `rowHead(...)` calls (sidebar and module page), the
+`syllabusRows` field in `tools/build.js` (modules.js line), the three CSS rules at the end of `app/css/app.css`, and
+`tools/syllabus-check.js`. Then add `syllabusRows` to `content/modules.json`.
 
 ## BACHY105 syllabus (VTOP, read 16-11-2026)
 1. Chemical thermodynamics and kinetics: 1 introduction, terminologies · 2 zeroth law, first law, enthalpy and heat
@@ -45,9 +50,11 @@ module → VTOP syllabus rows (in VTOP's order and wording) → our topics. "Con
    7 geometry optimisation · 8 frequency · 9 reaction mechanism · 10 AI to screen semiconductors.
 6. Contemporary topics: skipped.
 
-## Order of work (next sessions)
-1. BACHY105: finish downloads check (BACHY105-UPGRADE.md), extract text, syllabus rows + past-paper map, fix gaps,
-   regroup the sidebar by VTOP rows.
-2. Read BAEEE101 and BAENG101 syllabus tabs (owner signed in), then the same steps per site.
-3. EVS: confirm the syllabus source; keep the lecture grouping if no VTOP page exists.
+## Order of work (next sessions; updated 16-11-2026)
+1. BACHY105: review the content-fix agent's work (src/GAPS.md, 22 items), validate/build/qa, commit. Then MCQs and
+   flashcards for the new facts; delete src/vtop and src/papers when the site is final (owner: delete VTOP downloads).
+2. BAENG101: port the grouping (above) + syllabusRows; past papers (CodeChef/ExamCooker) answerability check.
+3. BAEEE101: owner signs in to VTOP (Claude in Chrome must be connected); download M4B/M5 decks + question banks;
+   write the missing topics listed above; past papers; port the grouping.
+4. EVS: MCQ coverage of the facts added in the audit.
 Free models (FreeLLMAPI) do the question → tab mapping and row → topic suggestions; scripts verify; Claude decides.
