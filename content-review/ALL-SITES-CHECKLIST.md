@@ -28,13 +28,15 @@ class numbers into any file.
 ### BAEEE101 Basic Engineering (`baeee101-notes`) — agent running 16-11-2026
 Papers (40 in src/papers-cc), gaps, real diagrams (fix existing word-only diagrams), references, rows. Not pushed.
 
-### BACHY105 Applied Chemistry (`bachy105-notes`)
-- Done: rows (2), 14 papers mapped (`notes-roadmap/content-review/bachy105-map.md`), most of `src/GAPS.md`.
-- Left: GAPS items 5–6 (chunks H/I: Carnot theorem, perpetual motion 2nd kind, why η < 100 %, maximise η;
-  adsorption ΔS < 0; absolute entropy from the third law) and verify item 7 (Li-ion "intercalation");
-  re-check every GAPS item is present; condition 5 audit (grep for word-only diagrams); condition 6 (papers section:
-  `content/papers-free.js` / pro answers); MCQs + flashcards for the new facts (q-M*.js); ExamCooker list.
-### BAENG101 Technical English (`baeng101-notes`)
+### BACHY105 Applied Chemistry (`bachy105-notes`) — DONE 16-11-2026, committed d6576e3, NOT pushed (waiting for "push")
+- All 22 GAPS items present (5–6 added: Carnot theorem tab, adsorption ΔS < 0, absolute entropy; 7 verified).
+- Condition 3: 14 papers (incl. new FAT B1+TB1 Nov 2026 with model answers), 91 questions, all covered:
+  `content-review/bachy105-paper-map.md` (copy of `src/PAPER-MAP.md`, which is gitignored). ExamCooker's 8 papers all present.
+- Condition 5: 7 new SVGs replacing word-only diagrams (AFC cell, O₂ MO, Maxwell–Boltzmann, Hc–T, Type I/II, Morse, HCN→HNC).
+- Condition 6: every answer has "Notes: Module › Topic › Tab" links; `validate.js` now fails an actual-paper question without `notes[]`.
+- MCQs: +8 (M1), keys rebalanced 11/11/11/12; +7 flashcards. Checks: validate 124 old errors only, build, qa no runtime errors, syllabus-check OK.
+- Left (minor): two warned thin tabs in chunk-K (`m3-conducting-materials` "Comparing the metals", `m3-insulators` "Uses & examples").
+### BAENG101 Technical English (`baeng101-notes`) — NEXT (not started 16-11-2026; stopped at 87% of the 5-hour limit)
 - Done: rows (2); word bank of all 100 definitions (m3-word-bank, pushed).
 - Left: condition 3 (CodeChef + ExamCooker BAENG101 papers; also `src/papers`, `src/papers-dl`, and
   ~/Downloads BAENG101-CAT2-*.txt and "BAENG101 - CAT I - Question pattern.docx"), condition 6, condition 4
