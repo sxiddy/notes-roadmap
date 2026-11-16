@@ -54,6 +54,11 @@ store list price (20); `"open": false` (S01).
    through a script check (quotes verbatim in the source, JSON parses, answers present in the notes). They never
    write what students read. In Nov 2026 most single-model routes returned 429; the router's `fusion` model
    worked at 1 request every ~10 s (evs-notes `tools/freellm.py`, `tools/mcq-check.py`).
+7. **Real diagrams, never word descriptions** (owner, 16-11-2026). Students copy diagrams into exam answers: every
+   diagram/circuit/plot/projection must be shown (slide crop or exam-correct SVG); prose may explain, never replace it.
+8. **Past-paper answers link to the notes** (owner, 16-11-2026). Every answer in the papers section carries a
+   reference "Notes: Module › Topic › Tab" (link) to the tab that answers it.
+9. **Skip modules not examined**: Contemporary Topics everywhere; BAEEE101 Module 5 (Bio-Inspired Design) too.
 5. **Interactive models only for hard topics**: processes, mechanisms, look-alike concepts, numbers that change
    with an input. Never decorative. Every label and number from the source. Check each with `tools/viz-snap.js`.
 

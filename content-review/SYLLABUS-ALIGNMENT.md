@@ -58,3 +58,12 @@ How to port the grouping to another site (about 10 minutes): copy from bachy105-
    write the missing topics listed above; past papers; port the grouping.
 4. EVS: MCQ coverage of the facts added in the audit.
 Free models (FreeLLMAPI) do the question → tab mapping and row → topic suggestions; scripts verify; Claude decides.
+
+## Status 16-11-2026 night (owner asked: "did you finish all three?")
+Not finished. Done: chemistry + English grouped by syllabus rows (pushed); chemistry 14 papers mapped, most gaps
+fixed (pushed); English word bank (100 definitions, 6 families, memory method, 97 flashcards) committed 4172af6,
+not pushed. Left:
+- Chemistry: GAPS items 5–6 (+ check 7); paper-answer references (rule 8); MCQs for new facts.
+- English: past-paper answerability check (CodeChef/ExamCooker BAENG101) + paper-answer references.
+- EVS: MCQ-only exam: check the MCQ bank covers the audit's added facts; past MCQ papers if any; references.
+- Basic Engineering: agent running (papers, gaps, real diagrams, references, rows; Module 5 skipped). Not pushed.
