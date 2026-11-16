@@ -52,3 +52,14 @@ Preview: `Projects/.claude/launch.json` entry `baphy105-notes-app` (port 4185).
 
 ## Cost
 Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other sessions, so the share is approximate).
+
+## 16-11-2026 late (owner: "make the websites, coming soon for the rest, do it")
+- LIVE coming-soon pages (static, `Projects/coming-soon/<code>/index.html`, Vercel team siddharth-uwu):
+  bacse103 / bacse104 / bacse105 / bacse106 / baesp101 / bamat205 .vercel.app.
+- baphy105: Vercel project `baphy105` created (baphy105-notes/.vercel), but the first prod deploy timed out:
+  https://baphy105.vercel.app returned 404. Redo: `npx vercel@latest deploy --prod --yes -e OPEN_ACCESS=1
+  -e SESSION_SECRET=<fresh random>` from baphy105-notes (run in the background; it takes >2 min), or set those as
+  project env vars. OPEN_ACCESS=1 = free, no sign-in, no payments (only Module 1 exists).
+- NOT done: owner asked to add Engineering Physics to the Notix store marked "under progress" and DSA and every
+  other next-sem subject marked "coming soon" (vit-notes-store: src/data/subjects.mjs, legal.json; see commit 54ad479
+  for how EVS was added). Not purchasable until Pro exists (lesson 23). Stopped at 93% of the 5-hour window.
