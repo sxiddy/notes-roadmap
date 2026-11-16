@@ -69,3 +69,8 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
   subject card text. Engineering Physics (BAPHY105) = "In progress"; BACSE103/104/105/106, BAESP101, BAMAT205 = "Coming soon".
 - baphy105.vercel.app: do NOT release the notes yet. Suggested instead of an empty page: the same coming-soon page with an
   "In progress" badge plus the module list and its progress (Module 1 written, 2–5 coming), notes not served.
+- DONE 16-11-2026 23:45 (owner said continue): Notix store (8e85248, pushed main+redesign, live on notix-notes.vercel.app)
+  shows 7 status cards from `UPCOMING` in src/data/subjects.mjs (not in PRODUCTS: no price, no Add Pro). BAPHY105
+  "In progress", the other six "Coming soon". baphy105.vercel.app now serves an "In progress" page with the module
+  list (from Projects/coming-soon/baphy105, deployed to the baphy105 project); the notes app is NOT deployed.
+  At launch: deploy baphy105-notes to that project and move BAPHY105 from UPCOMING to PRODUCTS + SUBJECTS.
