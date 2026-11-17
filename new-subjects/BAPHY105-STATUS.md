@@ -80,4 +80,4 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
   no price/buy). BAESP101 removed from the store. Live and checked.
 - Visits: each coming-soon page POSTs `{soon:CODE}` once per day per browser to notix-notes `/api/track`
   (CORS checked: OPTIONS 204, POST 200) → `soonVisits:<CODE>`; admin Visitors card shows a "Not launched yet" row per code.
-- baesp101.vercel.app is still deployed (not deleted); ask the owner before deleting.
+- baesp101 Vercel project deleted 17-11-2026 (owner approved); URL now 404.
