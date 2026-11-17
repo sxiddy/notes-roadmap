@@ -99,3 +99,9 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
   Source slip noted: problem 3 expansion swaps coefficients (final B = 3iA is right). All checks pass.
 - Next: Module 4 (`src/text/vtop__FALL2026-27_Lecture-notes-BAPHY105-Module-4.txt`, Particle-1D-and-3D problems,
   tunnelling deck), then M5.
+- Module 4 written (commit 7af1022): `content/chunk-4a.js`, 7 topics (one per VTOP row), 4 computed SVGs from
+  `tools/figs/m4.js` (box states, 3D levels with degeneracy, continuity-matched tunnelling wave, exact-T plots), numbers
+  in `check-numericals.js m4` (2 Å box Δν = 7.28e16 Hz; 5/10 eV 0.2 nm T ≈ 0.04 with prefactor, 0.010 bare; widths 0.5/1.0 nm
+  → 1 %). All checks pass; phone look done.
+- Next: Module 5 (quantum computing: `src/text/vtop__FALL2026-27_Lecture-notes-BAPHY105-Module-5.txt`, `..._Module-5.txt` deck,
+  SWAP gate), then questions/flashcards banks, PAPER-MAP + papers files, BAEEE101 leftovers (app.js syllabus map, SPEC, README).
