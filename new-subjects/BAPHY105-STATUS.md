@@ -92,3 +92,10 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
 - Stopped at 94% of the 5-hour window.
 - Next: Module 3 (Postulates; sources `src/text/vtop__FALL2026-27_Lecture-notes-BAPHY105-Module-3.txt`, Postulates,
   Expectation values, Sequential S–G decks), then M4, M5, questions/flashcards, PAPER-MAP + papers files, BAEEE101 leftovers.
+
+## 18-11-2026
+- Module 3 written (commit 5544022): `content/chunk-3a.js`, 6 topics (rows 4–5 and 7–8 merged), 1 SVG
+  (`tools/figs/m3.js`, sequential SG 2000 → 1000 → 500 → 250, phone look done), numbers in `check-numericals.js m3`.
+  Source slip noted: problem 3 expansion swaps coefficients (final B = 3iA is right). All checks pass.
+- Next: Module 4 (`src/text/vtop__FALL2026-27_Lecture-notes-BAPHY105-Module-4.txt`, Particle-1D-and-3D problems,
+  tunnelling deck), then M5.
