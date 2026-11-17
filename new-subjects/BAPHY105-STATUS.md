@@ -74,3 +74,10 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
   "In progress", the other six "Coming soon". baphy105.vercel.app now serves an "In progress" page with the module
   list (from Projects/coming-soon/baphy105, deployed to the baphy105 project); the notes app is NOT deployed.
   At launch: deploy baphy105-notes to that project and move BAPHY105 from UPCOMING to PRODUCTS + SUBJECTS.
+
+## 17-11-2026 (owner: cleaner list, drop Spanish, links, count visits)
+- Store home: compact "Coming next semester — not available yet" link list (6 entries from `api/_upcoming.js`,
+  no price/buy). BAESP101 removed from the store. Live and checked.
+- Visits: each coming-soon page POSTs `{soon:CODE}` once per day per browser to notix-notes `/api/track`
+  (CORS checked: OPTIONS 204, POST 200) → `soonVisits:<CODE>`; admin Visitors card shows a "Not launched yet" row per code.
+- baesp101.vercel.app is still deployed (not deleted); ask the owner before deleting.
