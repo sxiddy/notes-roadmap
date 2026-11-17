@@ -105,3 +105,9 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
   → 1 %). All checks pass; phone look done.
 - Next: Module 5 (quantum computing: `src/text/vtop__FALL2026-27_Lecture-notes-BAPHY105-Module-5.txt`, `..._Module-5.txt` deck,
   SWAP gate), then questions/flashcards banks, PAPER-MAP + papers files, BAEEE101 leftovers (app.js syllabus map, SPEC, README).
+- Module 5 written (commit eec9eb0, by one agent, reviewed): 10 topics one per VTOP row, 3 SVGs (Bloch sphere, Bell circuit
+  with ψ₀ψ₁ψ₂, X/Z/H gate actions), `check-numericals.js m5`. Source slips with heads-up notes: CNOT listed as single-qubit;
+  "twice as likely → ~30°" is 35.3° from |1⟩; "overlap without interference" (amplitudes do interfere). All checks pass.
+- ALL FIVE MODULES WRITTEN. Remaining before launch: questions/flashcard banks per module (answers spread 20–30 %),
+  src/PAPER-MAP.md + content/papers-free.js/papers-pro.js with notes links, BAEEE101 leftovers (app.js syllabus map ~l.2241,
+  formula sheet, lab-bench wording, SPEC.md, README, home tiles), then deploy + move BAPHY105 into PRODUCTS (owner's go).
