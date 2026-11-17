@@ -111,3 +111,8 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
 - ALL FIVE MODULES WRITTEN. Remaining before launch: questions/flashcard banks per module (answers spread 20–30 %),
   src/PAPER-MAP.md + content/papers-free.js/papers-pro.js with notes links, BAEEE101 leftovers (app.js syllabus map ~l.2241,
   formula sheet, lab-bench wording, SPEC.md, README, home tiles), then deploy + move BAPHY105 into PRODUCTS (owner's go).
+
+## Owner approval 18-11-2026 (all 9 pending items: "yeah all 9 are a yes")
+Order: (1–4) question banks, 6 papers (2 FAT, 2 CAT-1, 2 CAT-2 most recent), shell leftovers, phone look [agent running]
+→ (5) interactive models: Bloch sphere, particle in a box, tunnelling, sequential SG → (6) deploy notes to baphy105.vercel.app
+→ (7) Notix: move BAPHY105 from api/_upcoming.js into PRODUCTS/SUBJECTS at ₹20 → (8) push baphy105-notes → (9) delete src/vtop/.
