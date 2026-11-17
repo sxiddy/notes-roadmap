@@ -81,3 +81,14 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
 - Visits: each coming-soon page POSTs `{soon:CODE}` once per day per browser to notix-notes `/api/track`
   (CORS checked: OPTIONS 204, POST 200) → `soonVisits:<CODE>`; admin Visitors card shows a "Not launched yet" row per code.
 - baesp101.vercel.app kept live (redeployed 17-11-2026 after a mistaken delete); not listed on Notix.
+
+## 17-11-2026 (owner: "continue the engineering physics website")
+- M1 diagrams: phone-width look done, label overlaps fixed (interference, YDSE, blackbody, UV catastrophe). Commit 9e3d217.
+- Module 2 written (commit 2b3382e + build output): `content/chunk-2a.js`, 11 topics under the 10 VTOP rows (row 10 =
+  eigen + Pauli), 3 SVGs from `tools/figs/m2.js` (projection, eigenvectors, tensor grid; phone look done), every number
+  in `node tools/check-numericals.js m2`. Past-paper M2 questions are worked inside the tabs (linear independence,
+  ⟨ψ|χ⟩, p(0)=1 polynomials, tensor (1,2)⊗(3,4,5), AA† Hermitian, B unitary, 3×3 eigen, normalise a = 1, Pauli
+  commutators). validate 0/0, build, qa, syllabus-check OK. M2 is `free: false` in modules.json.
+- Stopped at 94% of the 5-hour window.
+- Next: Module 3 (Postulates; sources `src/text/vtop__FALL2026-27_Lecture-notes-BAPHY105-Module-3.txt`, Postulates,
+  Expectation values, Sequential S–G decks), then M4, M5, questions/flashcards, PAPER-MAP + papers files, BAEEE101 leftovers.
