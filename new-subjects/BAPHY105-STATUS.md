@@ -116,3 +116,14 @@ Stage 0 + sourcing: about 25% of a 5-hour window (window shared with two other s
 Order: (1–4) question banks, 6 papers (2 FAT, 2 CAT-1, 2 CAT-2 most recent), shell leftovers, phone look [agent running]
 → (5) interactive models: Bloch sphere, particle in a box, tunnelling, sequential SG → (6) deploy notes to baphy105.vercel.app
 → (7) Notix: move BAPHY105 from api/_upcoming.js into PRODUCTS/SUBJECTS at ₹20 → (8) push baphy105-notes → (9) delete src/vtop/.
+
+## LAUNCHED 18-11-2026
+- Widgets (commit 44f91d5) checked in a real browser: all 4 load on scroll-in, Bloch drag works, no sideways scroll at 375 px.
+- Deployed to https://baphy105.vercel.app as a paid site (`open:false`, ₹20 default). Vercel env: store's STORE_SECRET and
+  ADMIN_KEY copied from the getnotespro project (its values are readable; the subject sites' are "sensitive" and come back as
+  the text "[SENSITIVE]" from `env pull`, so never copy from a subject site). Redis: shared Upstash store
+  store_wToywU9aGFJgKpLi connected to baphy105 via the storage connections API. Own SESSION_SECRET and REVIEW_CODE.
+  Checked: /api/session 200 (price 2000, signin on); /api/stats 200 with the store's keys, 401 without.
+- Notix: vit-notes-store 1f12766 lists BAPHY105 at ₹20 (PRODUCTS + SUBJECTS), removed from Coming next; npm test 50/50;
+  live on notix-notes.vercel.app/baphy105.
+- Repo pushed: github.com/sxiddy/baphy105-notes (private, master @ 44f91d5). src/vtop/ (34 files, 26 MB) deleted.

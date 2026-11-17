@@ -22,7 +22,7 @@ Cost: log the 5-hour-limit percent and tokens after every session.
 | 4 | BACSE106 | Operating Systems (ETH+ELA) | VTOP Course Page, see VTOP-INVENTORY.md: about 91-100 theory uploads; lab not read | planned | | | | | Lite | | type: systems-hardware |
 | 5 | BAESP101 | Spanish Level I (ETH+ELA) | VTOP Course Page, see VTOP-INVENTORY.md: none listed for theory; lab not read | planned | | | | | Lite | | type: language; blocked on source |
 | 6 | BAMAT205 | Discrete Mathematics and Linear Algebra (TH) | VTOP Course Page, see VTOP-INVENTORY.md: about 161-170 uploads | planned | | | | | Lite | | type: mathematics |
-| 7 | BAPHY105 | Engineering Physics (ETH+ELA) | baphy105-notes/src (VTOP: 184 theory uploads, F2 Fall 2026-27 set + all keys/QBs; 19 past papers) | SOURCED + SHELL (see BAPHY105-STATUS.md) | | | | | Lite | | type: physics-lab; suggested first |
+| 7 | BAPHY105 | Engineering Physics (ETH+ELA) | baphy105-notes/src (VTOP: 184 theory uploads, F2 Fall 2026-27 set + all keys/QBs; 19 past papers) | LIVE 18-11-2026, ₹20 (see BAPHY105-STATUS.md) | | | | | Lite | | type: physics-lab; suggested first |
 | 8 | | | | | | | | | | | |
 | 9 | | | | | | | | | | | |
 | 10 | | | | | | | | | | | |
