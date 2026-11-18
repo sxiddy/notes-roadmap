@@ -15,3 +15,16 @@ says otherwise.
   api/battle.js l.39) and "plus Modules 3 and 4" (~l.2568). It must name this site's real modules.
 - Do the same change on baeee101, baeng101, bachy105 and bachy101 (evs-notes): each has the same `allow()`.
 - Run tests and fakeredis checks, then build, validate and qa on each site, then deploy each.
+
+## 0. FIRST after the 5-hour reset: full BAPHY105 audit (owner said "yes after reset", 18-11-2026)
+Compare the live https://baphy105.vercel.app with the chem site (bachy105-notes) and with Notix's promises
+(notix-notes.vercel.app/baphy105, vit-notes-store/src/data/subjects.mjs). Fix every real difference:
+1. Text left over from BAEEE101 in app/js/app.js, api/*.js, the HTML and the guide text: "Module 2", "Modules 3 and 4",
+   op-amp, circuits, CAD, lab bench, and wrong module counts.
+2. Free versus Pro must match chem: all notes free, Pro is only the Notix extras. Diff modules.json, _access.json,
+   _mode.json and the gate against bachy105-notes.
+3. Every chem feature (mock CAT/FAT, revision pack, formula sheet, battles, bookmarks, timer, papers with notes links)
+   works or is clearly absent. Notix must not promise anything missing.
+4. Live browser check signed out: every page, the console and network, and 375 px. Say what still needs a signed-in test.
+Run build, validate, qa and syllabus-check, then commit, push and deploy. Report each difference as fixed or not, with
+evidence. Already fixed 18-11: env placeholders, OAuth origin, ₹13 price, m2-m5 marked paid.
