@@ -21,6 +21,8 @@ OWNER = only the owner can do it. Everything else a session can do.
 ## Infrastructure (lessons 24-26)
 - [ ] OWNER: create the private GitHub repo under `sxiddy`; say "push".
 - [ ] Create the Vercel project and `vercel git connect` (OWNER approves prompts).
+      Then deploy ONLY by pushing to GitHub, never `vercel deploy --prod`: the site's `/api/stats` must show
+      `deploy.git: true`, or the Notix daily check flags it (baphy105 was CLI-only and silently missed a fix).
 - [ ] Connect the SHARED Upstash Redis to the project (`vercel integration resource connect ...`); do not create
       a new database. Prefix must be set in `api/_store.js` BEFORE connecting.
 - [ ] Env vars copied from an existing site by script without printing: `STORE_URL`, `STORE_SECRET`,
