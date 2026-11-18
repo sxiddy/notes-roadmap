@@ -25,6 +25,9 @@ OWNER = only the owner can do it. Everything else a session can do.
       a new database. Prefix must be set in `api/_store.js` BEFORE connecting.
 - [ ] Env vars copied from an existing site by script without printing: `STORE_URL`, `STORE_SECRET`,
       `GOOGLE_CLIENT_ID`, `ADMIN_KEY`, `REVIEW_CODE`, plus a NEW `SESSION_SECRET`. (After S04: its own `ADMIN_KEY`.)
+      Read `STORE_URL`, `STORE_SECRET`, `ADMIN_KEY` and `RAZORPAY_KEY_ID` from the STORE project (`getnotespro`), never
+      from another subject site: values marked "sensitive" read back empty, and a copied empty/wrong `STORE_SECRET` is
+      what kept EVS buyers locked out (lesson 38). A script must stop if any value it reads is empty.
 - [ ] OWNER: add the site origin and `/api/login` redirect to the Google OAuth client.
 - [ ] Deploy; on `/admin` set mode paid and sign-in on; `launch-check.js` passes.
 
@@ -34,6 +37,8 @@ OWNER = only the owner can do it. Everything else a session can do.
 - [ ] `npm test`, `npm run build`; OWNER says "push"; push `redesign` and `main` as in lesson 22.
 - [ ] Each site's `/api/session` shows the store price (lesson 26).
 - [ ] OWNER: one real purchase with a 99% code, confirm Pro unlocks on the site, then refund it.
+- [ ] The subject's `/admin` shows that purchase under payments (no "Not allowed." store error), and
+      `notix-notes.vercel.app/api/cron?job=check` (header `x-admin-key`) lists no problem for the new code.
 
 ## After launch
 - [ ] Announcement on the store (`/admin` Updates); mark the request "done" if it came from Requests.
