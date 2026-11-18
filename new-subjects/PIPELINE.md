@@ -99,5 +99,19 @@ mistake" visible; it posts to the store's `/api/community`).
 ## Launch
 `SUBJECT-CHECKLIST.md`. Never list a subject on the store before its site and Pro exist (23).
 
+Launch steps learned on BAPHY105 (18-11-2026). Do every one before listing the subject on the store:
+1. **Google sign-in.** Google Cloud (the account that owns project "BACHY105 Notes"), Google Auth Platform → Clients →
+   OAuth client 1031135588562-kg77…, then add the origin `https://<code>.vercel.app` to Authorised JavaScript origins and
+   `https://<code>.vercel.app/api/login` to Authorised redirect URIs, and Save. Without this, sign-in fails with
+   "Error 400: redirect_uri_mismatch".
+2. **Vercel env.** Copy STORE_SECRET and ADMIN_KEY from the store project (getnotespro): its values are readable.
+   Never `vercel env pull` from a subject site: its values are "sensitive" and come back as the text "[SENSITIVE]".
+   Connect the shared Upstash store (store_wToywU9aGFJgKpLi) for the KV_* and REDIS_URL vars. Give the site its own
+   SESSION_SECRET and REVIEW_CODE.
+3. **Price.** The store shows a sale price cut from the list price (PRODUCTS.price in vit-notes-store api/_lib.js).
+   To sell at ₹20 like the others, set the list price to 3000.
+4. **Check live.** /api/session returns 200 with the right price. /api/stats returns 200 with the store's keys and
+   401 without. A real Google sign-in reaches the site.
+
 ## Done when
 One new subject has gone through every stage with costs logged in SUBJECTS.md.
