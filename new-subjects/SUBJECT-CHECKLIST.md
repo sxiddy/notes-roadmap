@@ -33,6 +33,11 @@ OWNER = only the owner can do it. Everything else a session can do.
 - [ ] OWNER: add the site origin and `/api/login` redirect to the Google OAuth client.
 - [ ] Deploy; on `/admin` set mode paid and sign-in on; `launch-check.js` passes.
 
+- [ ] Copy the site from an existing subject: it then already has the Notix favicon (`app/favicon.svg` + the link in
+      `tools/build.js`), works without Razorpay keys, pings Notix on Help?/idea messages and reports `deploy.git`.
+      Nothing else to set up for the Notix admin: once the code is in `PRODUCTS`, the Inbox, Subject sites panel,
+      daily check and weekly summary include it by themselves.
+
 ## Store listing (only after the site and Pro work: lesson 23)
 - [ ] `vit-notes-store/api/_lib.js` `PRODUCTS`: add the code (name, tag, site, price).
 - [ ] `src/data/subjects.mjs` and the blurb; OG image (`npm run og`).
