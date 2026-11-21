@@ -164,6 +164,65 @@ Also from my recent work, port these EVS features to the other four sites (code 
 
 ---
 
+## Part D: my other projects
+
+### D1. VIT CGPA calculator: big UI redesign (L) — `sxiddy/vitcgpacalc`
+**What it is:** https://vitcgpacalc.vercel.app is a free tool where VIT students work out their GPA and CGPA (VIT's grades are S, A, B, C, D, E, F on a 10-point scale, weighted by course credits). It also has a profile, a shareable result card with a QR code, and an admin page.
+**Tech:** plain HTML pages (`index.html`, `calc.html`, `cgpa.html`, `profile.html`, `share.html`, ...), one stylesheet `css/style.css` (dark theme, CSS variables, Space Grotesk + Inter), scripts in `js/`, a small API in `api/` (Vercel functions, Turso), and a service worker `sw.js` for offline use. No framework.
+**Run locally:** `node tools/serve.js`; tests: `node tools/test-calc.js` and `node tools/test-server.js`.
+**The ask:** the UI works but looks generic. Make it look and feel drastically better, the kind of student tool people screenshot and share:
+- A clear visual direction (type, colour, spacing, motion) applied to every page. Dark by default; add a light theme if it fits.
+- **Mobile first.** Most students use it on phones. Entering grades and credits for 6–8 courses must be fast with thumbs: big tap targets, a grade picker instead of typing, no zooming.
+- An instant, satisfying result: an animated GPA/CGPA number and a grade breakdown chart.
+- A share card worth posting (`js/card.js`, `share.html`).
+- Don't change what's calculated. `tools/test-calc.js` must still pass; add tests if you touch calculation code.
+- Accessibility: contrast, keyboard use, labels.
+> Prompt: *"Read every HTML page, css/style.css and js/ui.js in vitcgpacalc. Propose 2–3 distinct visual directions as static mock pages (index + calc at 375 px and 1280 px) and stop for the owner to pick one. Then apply the chosen direction to every page, mobile first, with a grade picker, an animated result and a better share card. Keep all calculation logic and tests passing; screenshot every page at both widths for the PR."*
+Skills that suit this, if you have them: `impeccable`, `frontend-design`, `design-taste-frontend`.
+**Note:** I have an unfinished restyle there that isn't committed. I'll commit or drop it before you start, so start from the latest `main`.
+
+### D2. Roblox GFX/animation tooling (M) — `sxiddy/roblox-gfx-pipeline`
+Python tools that drive Blender headless to make Roblox-avatar posters and short animated films. The plan and status table are in `docs/SUPERIOR_PLAN.md`; the quality rules are in its tables. My avatar files and renders stay with me, so build only tools:
+- **Film checker:** given a rendered video, report repeated and frozen frames, shot lengths (cut detection), subtitle timing and loudness, using ffmpeg. Compare against the targets in `SUPERIOR_PLAN.md` (24 fps, median shot about 1.9 s, ...). Test on a short generated clip.
+- **Zigzag talking mouth:** the face rig should keep an avatar's signature mouth shape (such as zigzag teeth) when the mouth opens for lip sync.
+- More automatic checks in `tools/gate.py` for the rules in `SUPERIOR_PLAN.md`.
+
+### D3. Video-editing pipelines (M) — `sxiddy/minecraft-video-editing`, `sxiddy/roblox-video-editing`
+Scripts and rules for editing gaming videos (trailers, thumbnails) from raw clips with ffmpeg. Start from `MASTER_PLAN.md` in each repo.
+- Make each pipeline run end to end on a tiny generated sample clip, with one command and a test.
+- **Subtitles look weak:** a better default style (outline, shadow, size checked at phone width, optional word-by-word highlight).
+- Tests for the scripts.
+
+### D4. Drive reel tool (S) — `sxiddy/drive-reel-mcp`
+An MCP tool that cuts short reels from clips. Add tests and clean up; read `README.md`, `AGENTS.md` and `HANDOFF.md` first. I'll commit my local changes before you start.
+
+---
+
+## Part E: spending your usage wisely
+This is a rare chance for me, so please spend it where it buys the most.
+
+**Budget split (of the ~35% weekly):**
+| Area | Share | Why |
+|---|---|---|
+| Wave 1 foundations (CI, notes-tools, env check) | ~6% | Makes every later task cheaper and safer |
+| Wave 2 security | ~6% | Protects real money |
+| Wave 3 student features + porting | ~9% | What students notice and pay for |
+| D1 CGPA redesign | ~6% | High-traffic free tool; a design task needs the best model |
+| Wave 4 store + admin settings | ~5% | More sales, less of my time on edits |
+| D2–D4 | ~3% | Tools only |
+
+If a task runs well past its share, stop, open a draft PR with what's done, and move on.
+
+**How to save usage:**
+- **Use the strongest model for design and tricky logic** (D1 directions, security fixes, the admin settings design). **Use a cheaper model, such as Sonnet, for mechanical work**: porting a feature to the other four sites, writing tests from a spec, CI files.
+- **Build once on EVS, then port with a script or `sync-shell.js`,** not by having Claude rewrite the same change five times.
+- **Fresh session per task,** started with the task's prompt. Don't keep one giant session going.
+- **Point Claude at the spec file and the exact files** instead of letting it explore the whole repo. The specs already did that exploration.
+- **Plan first for L tasks:** ask for a short plan, check it, then let it implement. A wrong direction is the biggest waste.
+- **Don't re-run the full browser test after every small edit;** run the quick checks, and do the full run before the PR.
+
+---
+
 ## Not yours (needs me)
 Deploying; Cloudflare, Razorpay, Turso and Google dashboards; real sign-in and payment checks on the live sites; writing course content; anything that needs VIT's portal.
 
